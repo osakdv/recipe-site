@@ -1,10 +1,14 @@
 import { useNavigate } from "react-router-dom"
 
-const Navigation = (Component) => {
-    return function UseNavigation(props){
-        const navigate = useNavigate()
-        return <Component {...props} navigate={navigate}/>
+const NavigationHook = (Component) => {
+    return function FunctionComponent(props){
+        const navigate = useNavigate();
+
+        const navigationHandler =  (pageLink) => {
+            navigate(pageLink)
+        }
+        return <Component {...props} navigate={navigationHandler}/>
     }
 }
 
-export default Navigation;
+export default NavigationHook;

@@ -1,11 +1,21 @@
 import { Component } from "react";
+// hook
+import ContextHook from "../../hooks/useContext/useContextHook";
+// content
 
 class SearchResult extends Component {
-    render = () => {
+    render = () => {        
+        const {searchResult} = this.props;
         return(
-            <div>Your search result</div>
+            <div>
+                {
+                    searchResult.map(data => {
+                        return <p key={data.idMeal}>{data.strMeal}</p>
+                    })
+                }
+            </div>
         )
     }
 }
 
-export default SearchResult;
+export default ContextHook(SearchResult);

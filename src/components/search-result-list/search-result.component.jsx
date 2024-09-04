@@ -1,6 +1,6 @@
 import { Component } from "react";
 // custom hooks
-import Navigation from "../../hooks/useNavigate-hook/useNavigate";
+import NavigationHook from "../../hooks/useNavigate-hook/useNavigate";
 // style
 import styles from "./search-result-list.module.css";
 
@@ -111,4 +111,4 @@ class SearchResultList extends Component {
     }
 }
 
-export default Navigation(SearchResultList);
+export default NavigationHook(SearchResultList);

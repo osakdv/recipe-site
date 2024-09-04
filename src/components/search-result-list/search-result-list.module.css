@@ -1,0 +1,125 @@
+.search_result_list_container {
+    width: 100%;
+    padding-top: 15px;
+    background-color: white;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    overflow: hidden;
+}
+
+.result_heading {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: .8rem !important;
+    color: rgb(103, 103, 103);
+    padding: 0 15px;
+}
+
+.heading_text {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.line_divider {
+    border: .5px solid #d1d1d1;
+    width: 100%;
+}
+
+.search_icon {
+    font-size: 16px !important;
+    line-height: 1;
+}
+
+/* result items */
+.result_item_container {
+    margin-top: 10px;
+}
+
+.result_item_container .item_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem 15px;
+    border-bottom: .5px solid #d1d1d1;
+}
+
+.result_item_container .item_wrapper:last-of-type {
+    border-bottom: none;
+}
+
+.result_item_container .item_wrapper:hover {
+    background-color: rgb(244, 244, 244);
+    cursor: pointer;
+}
+
+.item_wrapper .details {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.item_wrapper .details .img_content {
+    width: 40px;
+    height: 40px;
+    background-color: beige;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.item_wrapper .details .img_content img {
+    width: 100%;
+    height: 100%;
+}
+
+.item_wrapper .details .text_content h4 {
+    font-weight: 500;
+    font-size: .9rem;
+    color: rgb(37, 37, 37);
+}
+
+.item_wrapper .details .text_content small {
+    color: rgb(130, 130, 130);
+}
+
+.item_wrapper .link_btn {
+    color: rgb(105, 105, 105) !important;
+}
+
+/* view full list container */
+.view_full_result_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    background: rgb(243, 243, 243);
+}
+
+.vfr_heading {
+    font-size: .9rem;
+    display: flex;
+    gap: 5px;
+    color: rgb(211, 164, 255);
+}
+
+.vfr_btn {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    text-decoration: underline;
+    color: rgb(125, 124, 124);
+}
+
+/* no result */
+.no_search_result {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: rgb(134, 134, 134);
+    padding: 20px 0;
+}

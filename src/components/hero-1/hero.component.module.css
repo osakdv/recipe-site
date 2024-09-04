@@ -1,0 +1,149 @@
+.hero_content_container {
+    width: 100%;
+    min-height: 70vh;
+    background-color: #F0EDF8;
+    padding: 20px 160px;
+}
+
+.content_1 {
+    display: flex;
+    height: fit-content;
+    justify-content: space-between;
+}
+
+.content_1 .text_content_1 {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.text_content_1 h1 {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.content_1 .img_content_1 {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.img_content_1 .img {
+    height: 340px;
+    width: 50%;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img_content_1 .img img {
+    width: 100%;
+    height: 100%;
+}
+
+/* meal categories */
+.content_2 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.meal_category_card_container {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* achievements */
+.numbers_achivements {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+@media screen and (max-width: 1250px) {
+    .hero_content_container {
+        padding: 20px 100px;
+    }
+}
+
+@media screen and (max-width: 1108px) {
+    .text_content_1 h1 {
+        font-size: 2.7rem;
+    }
+}
+
+@media screen and (max-width: 1020px) {
+    .text_content_1 h1 {
+        font-size: 2.3rem;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .hero_content_container {
+        padding: 20px 70px;
+    }
+}
+
+@media screen and (max-width: 836px) {
+    .hero_content_container {
+        padding: 20px 40px;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .hero_content_container {
+        padding: 20px 20px;
+    }
+}
+
+@media screen and (max-width: 740px) {
+    .hero_content_container .content_1 {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .content_1 .text_content_1 {
+        width: 100%;
+        gap: 20px;
+    }
+
+    .text_content_1 h1 {
+        text-align: center !important;
+    }
+
+    .content_1 .img_content_1 {
+        width: 100%;
+    }
+
+    .img_content_1 .img {
+        height: 240px;
+    }
+
+    .numbers_achivements {
+        width: 48%;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .content_2 {
+        flex-direction: column-reverse;
+    }
+
+    .meal_category_card_container {
+        width: 100%;
+    }
+
+    .numbers_achivements {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+

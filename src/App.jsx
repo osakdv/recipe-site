@@ -1,7 +1,5 @@
 import { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, useParams } from 'react-router-dom';
-// style
-import './App.css';
 // context
 import { SearchResultProvider } from './context/search-result/search-result.context';
 // pages

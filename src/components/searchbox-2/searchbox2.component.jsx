@@ -8,6 +8,9 @@ class Searchbox2 extends Component {
             <div className={styles.searchbox2_form_wrapper}>
                 <form className={styles.search2_container_form}>
                     {/* search icon */}
+                    <span class="material-symbols-outlined">
+                        circle
+                    </span>
                     {/* input field */}
                     <input type="text" placeholder="Search or filter for recipe"/>
                     {/* clear icon */}

@@ -11,6 +11,14 @@
     border: 1px solid rgb(228, 228, 228);
     border-radius: 8px;
     box-shadow: 0px 2px 3px 0px #f4f4f4;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.search2_container_form span {
+    font-size: 1.2rem !important;
+    color: rgb(155, 155, 155);
 }
 
 .search2_container_form input {

@@ -28,3 +28,7 @@ main {
     width: 100vw;
     min-height: 100vh;
 }
+
+button, input {
+    font-family: "Inter", system-ui;
+}

@@ -1,19 +1,23 @@
 import { useState } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useParams } from 'react-router-dom';
 // style
 import './App.css';
 // context
 import { SearchResultProvider } from './context/search-result/search-result.context';
 // pages
-import HomePage from './pages/home/home.page';
-import SearchResult from './pages/search-result/search-result.page';
+import HomePage from './routes/home/home.page';
+import SearchResult from './routes/search-result/search-result.page';
+import MealDetails from './routes/meal-details/meal-details.page';
 
 function App() {
-  const [searchResult, setSearchResult] = useState(null)
+  // TODO: implement dynamic routing
+  const urlParams = useParams()
+  const [searchResult, setSearchResult] = useState([])
+  
   const getSearchResultData = (data) => {
     setSearchResult(data);
-    console.log(data)
   }
+
 
   return (
     <SearchResultProvider.Provider value={{searchResult}}>

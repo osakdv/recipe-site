@@ -1,0 +1,142 @@
+.meal_preview_container {
+    width: 100%;
+    height: fit-content;
+    padding: 20px 10px;
+    border-top: 1px solid rgb(239, 239, 239);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start !important;
+    cursor: pointer;
+}
+
+.top_container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.food_details_wrapper {
+    display: flex;
+    gap: 14px;
+}
+
+.food_details_wrapper .food_img {
+    height: 40px;
+    width: 40px;
+    overflow: hidden;
+    border-radius: 50% !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center !important;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+}
+
+.food_details_wrapper .food_img img {
+    width: 100%;
+    height: 100%;
+}
+
+.food_desc .title_and_difficulty {
+    display: flex;
+    gap: 10px;
+}
+
+.food_desc .title_and_difficulty p {
+    font-size: .9rem;
+    font-weight: 500;
+}
+
+.food_desc .title_and_difficulty span {
+    font-size: .7rem;
+    background-color: #FEF0C7;
+    color: #80361E;
+    padding: 2px 5px;
+    border-radius: 4px;
+}
+
+.desc_paragraph {
+    font-size: .8rem;
+    margin-top: 10px;
+    width: 460px;
+    color: rgb(76, 76, 76);
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+.ingridients_preview {
+    display: flex;
+    gap: 10px;
+    font-size: .74rem;
+    color: blueviolet;
+    margin-top: 20px;
+}
+
+.actions_and_engagement {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+
+.add_to_grocery_list_btn {
+    font-size: .8rem;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: blueviolet !important;
+}
+
+.add_to_grocery_list_btn span:last-of-type {
+    font-size: 1.2rem !important;
+}
+
+.view_recipe_full_details {
+    font-size: .8rem;
+    height: 26px;
+    padding: 0 14px;
+    background-color: transparent;
+    outline: none;
+    border: 1px solid rgb(220, 220, 220);
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu_btn {
+    height: 26px;
+    padding: 0 4px;
+    outline: none;
+    border: 1px solid rgb(220, 220, 220);
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu_btn span {
+    font-size: 1.3rem !important;
+}
+
+.like_container {
+    margin-top: 47px;
+    display: flex;
+    gap: 3px;
+    align-items: center;
+}
+
+.like_container span:first-of-type {
+    font-size: .8rem;
+}
+
+.like_container span:last-of-type {
+    font-size: 1.1rem;
+}

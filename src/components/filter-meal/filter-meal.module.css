@@ -1,0 +1,23 @@
+.filter_meal_container {
+    height: 100vh;
+    padding: var(--opt-container-side-spacing) 0;
+}
+
+.heading {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 var(--opt-container-side-spacing);
+}
+
+.heading p {
+    font-weight: 500;
+    font-size: .85rem;
+}
+
+.heading small {
+    color: rgb(52, 52, 52);
+}
+
+.filter_options_container {
+    margin-top: 10px;
+}
